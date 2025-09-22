@@ -51,5 +51,5 @@ dados = np.genfromtxt(
 print(dados)
 print("Nome da segunda coluna", dados["nome"][1])
 
-# dados = np.loadtxt("exemplo.csv", delimiter=",", dtype=float, skiprows=3, usecols=(1,2))
-# print("Matriz carregada\n", dados)
+dados = np.loadtxt("exemplo.csv", delimiter=",", dtype=float, skiprows=3, usecols=(1,2))
+print("Matriz carregada\n", dados)
