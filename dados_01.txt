@@ -1,0 +1,4 @@
+nome, idade, nota
+renzo, 19, 7
+pedrin, 12,9
+carlin, 16, 10
