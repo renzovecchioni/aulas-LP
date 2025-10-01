@@ -9,7 +9,7 @@ def funcao_antiga(valor: float) -> float:
         "Função antiga está deprecada e será removida na versão futura. Use \"math.sqrt\""
         category=DeprecationWarning,
         stacklevel=2
-)
+    )
     return math.sqrt(valor)
 
 print("funcao_antiga(16):", funcao_antiga(16))
