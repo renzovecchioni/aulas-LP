@@ -16,5 +16,4 @@ def registrar_evento(mensagem):
 registrar_evento("Sistema iniciado")
 registrar_evento("Usuário autenticado")
 registrar_evento("Navegador iniciado")
-registrar_evento("Instagram acessado")                 
-    
+registrar_evento("Instagram acessado")             

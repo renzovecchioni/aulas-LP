@@ -14,7 +14,7 @@ def log_args(func):
         DESCRIPTION.
 
     """
-    @wraps(func) # Colocar o @wraps(func) faz a função subtrair virar a "própria" decorada. Ou seja, ela possui seu próprio nome e seu próprio doc string, mesmo sendo decorada.
+    # @wraps(func) # Colocar o @wraps(func) faz a função subtrair virar a "própria" decorada. Ou seja, ela possui seu próprio nome e seu próprio doc string, mesmo sendo decorada.
     def wrapper(*args, **kwargs):
         """
         DECORADOR INTERNO

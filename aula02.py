@@ -13,9 +13,10 @@ def saudador(pessoa):
         return f"{saudacao}, {pessoa}"
     return mensagem
 # Driver Code - Código que faz a aplicação da função
-#print(saudador.__code__)
-#print(dir(saudador.__code__))
+print(saudador.__code__)
+print(dir(saudador.__code__))
 
+# print(saudador("marcelo"))
 print(saudador.__code__.co_consts)
 print(dir(saudador.__code__.co_consts))
 print(hasattr(saudador.__code__.co_consts, "__iter__")) # Então é "iterável"
@@ -30,4 +31,3 @@ mensagem_ana = saudador("Ana")
 mensagem_joao = saudador("João")
 print(mensagem_ana())
 print(mensagem_joao())
-        

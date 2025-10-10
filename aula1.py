@@ -49,6 +49,3 @@ def relatorio(*args, **kwargs):
         print(f" - {chave}: {valor}")
         
 relatorio("Ana", "Arthur", "Yuri", tema="Anime", duracao="2h")
-
-    
-

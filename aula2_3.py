@@ -20,8 +20,13 @@ else:
 # O nome desse tipo de método é "Método Ligado"
 if hasattr(texto, nome_metodo):
     metodo = getattr(texto, nome_metodo) 
-    texto = metodo(texto) 
+    texto = metodo() 
 
     print(texto, "kd?")
 else:
     print(f"O método {nome_metodo} NÃO EXISTE")
+
+#como usar getattr:
+
+metodo = getattr("  Joao  ", "strip")
+print(metodo("  Joao  marceki"))

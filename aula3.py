@@ -19,13 +19,15 @@ def demo_heranca():
     erro = AuthorizationError("Acesso negado a recurso")
     print(erro.args)
     print(str(erro))
-    
+
     classes = [cls.__name__ for cls in erro.__class__.mro()]
     print(classes)
     
     print(hasattr(erro, "__cause__"))
     print(hasattr(erro, "__context__"))
     print(hasattr(erro, "__traceback__"))
+
+demo_heranca()
 
 def mock_obter_recurso(simular):
     if simular == "authn":
@@ -81,4 +83,3 @@ if __name__ == "__main__":
 for cada_caso in ["authn", "authz", "limit", "ok"]: # Linha de teste para cada caso
     print(f"\nCaso: {cada_caso}")
     demo_ordem_erros(cada_caso)
-    

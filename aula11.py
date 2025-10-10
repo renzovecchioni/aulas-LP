@@ -50,7 +50,7 @@ print("Soma por linhas de x:\n", np.sum(x, axis=1))
 
 ### Estatistica em NDarrays
 
-data = np.random.randint(1, 100, size=10)
+data = np.random.randint(1, 100)
 print("ND array aleatorio", data)
 print("Media", np.mean(data))
 print("Desvio padrao:", np.std(data))
@@ -64,3 +64,4 @@ array_  = np.array([10,15,20,25,30])
 print("ARRAY: ", array_)
 print("Valores maiores que 20:", array_[array_ > 20])
 print("Valores pares:", array_[array_ %2==0])
+
